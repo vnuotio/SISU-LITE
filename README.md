@@ -1,9 +1,4 @@
-# Programming 3 project template
+A helper program for keeping track of your studies through Sisu API.
+This is just an MVP, and is not recommended to be used as such.
 
-Make sure you have setup ssh-key for your GitLab account.
-
-Code will be published soon.
-
-Note! The .gitlab-ci.yml is offline at the moment.
-
-# You are allowed (and probably should) make changes to this file after you have started your project. :)
+Made with Roope Mantere and Ali Hussain
