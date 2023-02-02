@@ -1,0 +1,17 @@
+fi\tuni\prog3\sisu\controller\StudentInfo.class
+fi\tuni\prog3\sisu\models\RuleModule.class
+fi\tuni\prog3\sisu\utility\Urls.class
+fi\tuni\prog3\sisu\models\StudentDataHolder.class
+fi\tuni\prog3\sisu\api\SisuApiHandler.class
+fi\tuni\prog3\sisu\Sisu.class
+fi\tuni\prog3\sisu\api\SisuApiHandler$1.class
+fi\tuni\prog3\sisu\controller\CourseViewController.class
+module-info.class
+fi\tuni\prog3\sisu\models\StudyModule.class
+fi\tuni\prog3\sisu\models\CourseDataHolder.class
+fi\tuni\prog3\sisu\models\CourseModule.class
+fi\tuni\prog3\sisu\models\DegreeId.class
+fi\tuni\prog3\sisu\controller\MainWindow.class
+fi\tuni\prog3\sisu\models\SisuModule.class
+fi\tuni\prog3\sisu\models\Student.class
+fi\tuni\prog3\sisu\utility\HttpRequestHandler.class

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.prog3.sisu.controller.MainWindow">
+   <children>
+      <StackPane fx:id="ViewContainer" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <VBox prefHeight="638.0" prefWidth="213.0" style="-fx-background-color: #659df7;" styleClass="leftpanel" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="studentInfoBtn" mnemonicParsing="false" prefHeight="85.0" prefWidth="214.0" style="-fx-background-color: #659df7;" text="Opintotiedot" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font></Button>
+                        <HBox prefHeight="36.0" prefWidth="214.0">
+                           <children>
+                              <Button fx:id="switchLangBtnFI" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #659df7; -fx-border-color: #5a8cdb;" text="FI" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font></Button>
+                              <Button fx:id="switchLangBtnEN" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #659df7; -fx-border-color: #5a8cdb;" text="EN" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <Label fx:id="switchProgrammeInfoLbl" alignment="CENTER" prefHeight="24.0" prefWidth="213.0" text="Valitse opinto-ohjelma" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="switchProgrammeBox" prefWidth="214.0" style="-fx-background-color: #5a8cdb; -fx-border-color: #466ba6;" />
+                        <HBox prefHeight="36.0" prefWidth="214.0">
+                           <children>
+                              <Button fx:id="switchProgrammeBtn" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: #659df7; -fx-border-color: #5a8cdb;" text="Vaihda" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font></Button>
+                              <Button fx:id="viewProgrammeBtn" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: #659df7; -fx-border-color: #5a8cdb;" text="Tarkastele" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <Button fx:id="resetProgrammeBtn" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: #659df7; -fx-border-color: #5a8cdb;" styleClass="leftpanel" text="Reset" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font></Button>
+                        <Button fx:id="saveBtn" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="60.0" prefWidth="214.0" style="-fx-background-color: #FFCC00;" text="Tallenna">
+                           <VBox.margin>
+                              <Insets top="271.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="saveExitBtn" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="60.0" prefWidth="214.0" style="-fx-background-color: #5a8cdb; -fx-border-color: #466ba6;" text="Tallenna ja poistu" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <AnchorPane fx:id="TreeAnchor" prefHeight="638.0" prefWidth="811.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TreeView fx:id="TreeWeb" layoutX="-3.0" prefHeight="638.0" prefWidth="856.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

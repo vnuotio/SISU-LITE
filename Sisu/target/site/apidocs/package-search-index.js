@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"fi.tuni.prog3.sisu","l":"fi.tuni.prog3.sisu"},{"m":"fi.tuni.prog3.sisu","l":"fi.tuni.prog3.sisu.api"},{"m":"fi.tuni.prog3.sisu","l":"fi.tuni.prog3.sisu.models"},{"m":"fi.tuni.prog3.sisu","l":"fi.tuni.prog3.sisu.utility"}];updateSearchResults();

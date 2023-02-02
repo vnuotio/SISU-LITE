@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.prog3.sisu.controller.CourseViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #659df7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0">
+               <top>
+                  <HBox prefHeight="58.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="courseCompletedBtn" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="58.0" prefWidth="157.0" style="-fx-background-color: #2dad2f; -fx-border-color: #1d781e;" text="Mark As Completed" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="16.0" />
+                           </font></Button>
+                        <Label fx:id="courseNameLbl" alignment="CENTER" prefHeight="56.0" prefWidth="474.0" text="Course name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font></Label>
+                        <Button fx:id="closeBtn" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="28.0" prefWidth="27.0" style="-fx-background-color: #e34d4d;" text="X" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Symbol" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="422.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="shortContentLbl" alignment="TOP_LEFT" prefHeight="70.0" prefWidth="602.0" text="Label" textFill="WHITE" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Segoe UI" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="outcomesTitleLbl" alignment="CENTER" prefHeight="72.0" prefWidth="231.0" text="Oppimistavoitteet" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="contentTitleLbl" alignment="CENTER" prefHeight="72.0" prefWidth="230.0" text="Kurssin sisältö" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="25.0" right="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="240.0" prefWidth="550.0">
+                           <VBox.margin>
+                              <Insets left="25.0" right="25.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets left="25.0" right="25.0" />
+                           </opaqueInsets>
+                           <children>
+                              <WebView fx:id="studyGoals" prefHeight="193.0" prefWidth="271.0">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                              </WebView>
+                              <WebView fx:id="courseContent" prefHeight="201.0" prefWidth="277.0">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                              </WebView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
